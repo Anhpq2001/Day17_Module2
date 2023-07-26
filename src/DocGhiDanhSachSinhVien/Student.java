@@ -3,9 +3,13 @@ package DocGhiDanhSachSinhVien;
 import java.io.Serializable;
 
 public class Student implements Serializable {
+    private static final long serialVersionUID = 123l;
     private int id;
     private String name;
     private String address;
+
+    private Double money;
+
 
     public Student() {
     }
@@ -46,6 +50,7 @@ public class Student implements Serializable {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
+                ", money=" + money +
                 '}';
     }
 }
